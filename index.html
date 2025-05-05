@@ -17,33 +17,35 @@
                 <img src="images/Mask group.png" alt="">
             </div>
 
-            <div class="hero__content">
-                <h1 class="hero__heading">Create Personalized Stories With Storys on the Go</h1>
-                <p class="hero__description">
-                    From rocket ships to dragon caves, every story begins with them. Create magical, personalized
-                    adventures for kids to listen to.
-                </p>
+            <div class="hero__content-main">
+                <div class="hero__content">
+                    <h1 class="hero__heading"><span>Create</span> Personalized Stories With Storys on the Go</h1>
+                    <p class="hero__description">
+                        From rocket ships to dragon caves, every story begins with them. Create magical, personalized
+                        adventures for kids to listen to.
+                    </p>
 
-                <div class="hero__downloads">
-                    <div class="hero__download-text">
-                        Download the app on Google Play and the App Store.
-                    </div>
+                    <div class="hero__downloads">
+                        <div class="hero__download-text">
+                            Download the app on Google Play and the App Store.
+                        </div>
 
-                    <div class="hero__store-links">
-                        <a href="#" class="hero__store-link">
-                            <div class="hero__store-icon"><img src="images/fi_731985.png" alt="img"></div>
-                            <div class="hero__store-text">
-                                <div class="hero__store-top">Download on the</div>
-                                <div class="hero__store-bottom">App Store</div>
-                            </div>
-                        </a>
-                        <a href="#" class="hero__store-link">
-                            <div class="hero__store-icon"><img src="images/fi_732208.png" alt="img"></div>
-                            <div class="hero__store-text">
-                                <div class="hero__store-top">Get It on</div>
-                                <div class="hero__store-bottom">Google Play</div>
-                            </div>
-                        </a>
+                        <div class="hero__store-links">
+                            <a href="#" class="hero__store-link">
+                                <div class="hero__store-icon"><img src="images/fi_731985.png" alt="img"></div>
+                                <div class="hero__store-text">
+                                    <div class="hero__store-top">Download on the</div>
+                                    <div class="hero__store-bottom">App Store</div>
+                                </div>
+                            </a>
+                            <a href="#" class="hero__store-link">
+                                <div class="hero__store-icon"><img src="images/fi_732208.png" alt="img"></div>
+                                <div class="hero__store-text">
+                                    <div class="hero__store-top">Get It on</div>
+                                    <div class="hero__store-bottom">Google Play</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,7 @@
 
             <div class="how-it-works__intro">
                 <div class="how-it-works__heading">
-                    <h2>How it works?</h2>
+                    <h2><span>How</span> it works?</h2>
                 </div>
                 <div class="how-it-works__description">
                     <div class="how-it-works__subheading">Bring stories to life with the magic of your voice.</div>
@@ -84,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="how-it-works__step">
+            <div class="how-it-works__step how-it-works__step-revrs">
                 <div class="how-it-works__step-image">
                     <img src="images/Group 35.png" alt="img" loading="lazy">
                 </div>
@@ -145,7 +147,7 @@
     <section class="features">
         <div class="features__container">
             <img src="images/dragon-white.png" alt="img" class="features__container-dragon">
-            <h2 class="features__title">The All In One Features</h2>
+            <h2 class="features__title">The All In One <span>Features</span></h2>
             <div class="features__list">
                 <div class="features__item features__item1">
                     <div class="features__content">
@@ -202,7 +204,7 @@
     <section class="testimonials">
         <div class="testimonials__container">
             <img src="images/Frame 427321916.png" alt="img" class="testimonials-shap">
-            <h2 class="testimonials__title">What our client say</h2>
+            <h2 class="testimonials__title"><span>What</span> our client say</h2>
             <div class="testimonials__list">
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
@@ -346,7 +348,8 @@
 
     <section class="download-section">
         <div class="download-section__container">
-            <h2 class="testimonials__title download-section__title">Download Now and Let the Stories Begin!</h2>
+            <h2 class="testimonials__title download-section__title"><span>Download</span> Now and Let the Stories Begin!
+            </h2>
             <div class="hero__store-links download-section__stores">
                 <a href="#" class="hero__store-link download-section__store-link">
                     <div class="hero__store-icon download-section__icon">
@@ -424,17 +427,32 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination-testi",
-                clickable: true,
+          slidesPerView: 2,
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination-testi",
+            clickable: true,
+          },
+          breakpoints: {
+            320: {        // mobile
+              slidesPerView: 1.2,
+              spaceBetween: 20,
+              centeredSlides: true,
             },
+            640: {        // tablets
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {       // desktops
+              slidesPerView: 2,
+              spaceBetween: 30,
+            }
+          }
         });
-
-    </script>
+      </script>
+      
 </body>
 
 </html>

@@ -53,12 +53,20 @@
     position: relative;
 }
 
-.hero__heading::before {
+.hero__content-main {
+    padding: 0 150px;
+}
+
+.hero__heading span {
+    position: relative;
+}
+
+.hero__heading span::before {
     content: '';
     position: absolute;
     width: 3rem;
     height: 3rem;
-    left: 3%;
+    left: -3rem;
     top: -5%;
     transform: rotate(-15deg);
     background: url('../images/Frame.png');
@@ -186,7 +194,11 @@
     position: relative;
 }
 
-.how-it-works__heading h2::before {
+.how-it-works__heading h2 span {
+    position: relative;
+}
+
+.how-it-works__heading h2 span::before {
     content: '';
     position: absolute;
     width: 3rem;
@@ -204,8 +216,12 @@
     position: relative;
 }
 
+.testimonials__title span {
+    position: relative;
+}
+
 .interactive-storytelling__heading1::before,
-.testimonials__title::before {
+.testimonials__title span::before {
     content: '';
     position: absolute;
     width: 3rem;
@@ -404,7 +420,12 @@
     position: relative;
 }
 
-.features__title::before {
+.features__title span {
+    position: relative;
+    display: inline-block;
+}
+
+.features__title span::before {
     content: '';
     position: absolute;
     width: 3rem;
@@ -471,6 +492,11 @@
     color: var(--white-color);
     line-height: normal;
     margin-bottom: 18px;
+}
+
+.how-it-works__step-image img {
+    max-width: 350px;
+    width: 100%;
 }
 
 .features__description,
@@ -703,4 +729,257 @@
     text-align: center;
     border-top: 1px solid var(--dark-gray);
     padding: 30px 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    .hero__heading::before {
+        left: -3rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero__image {
+        padding: 12px 50px;
+    }
+
+    .hero__content-main {
+        padding: 0 100px;
+    }
+
+    .how-it-works__container {
+        padding: 100px 50px;
+    }
+
+    .interactive-storytelling__container {
+        padding-left: 50px;
+    }
+
+    .features__container {
+        padding: 50px 50px;
+    }
+
+    .download-section__container {
+        padding: 50px 50px;
+    }
+
+    .footer__container {
+        padding: 50px 50px 0 50px;
+    }
+
+    .hero__heading {
+        font-size: 65px;
+    }
+
+    .how-it-works__heading {
+        font-size: 30px;
+        max-width: 350px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hero__heading {
+        font-size: 40px;
+    }
+
+    .hero__download-text {
+        font-size: 20px;
+    }
+
+    .hero__heading span::before {
+        top: -35%;
+    }
+
+    .hero__content {
+        padding-top: 50px;
+        padding-bottom: 524px;
+    }
+
+    .how-it-works__intro {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .how-it-works__step {
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .how-it-works__step-number {
+        text-align: center;
+    }
+
+    .how-it-works__step-title {
+     text-align: center;
+        font-size: 30px;
+    }
+
+    .how-it-works__step-description {
+     text-align: center;
+        font-size: 18px;
+    }
+
+    .how-it-works__step-revrs {
+        flex-direction: column-reverse;
+    }
+
+    .interactive-storytelling__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .interactive-storytelling__heading2 {
+        margin: auto;
+    }
+
+    .interactive-storytelling__heading1 {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .interactive-storytelling__description {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .interactive-storytelling__content {
+        padding-right: 50px;
+    }
+
+    .interactive-storytelling__image {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    .features__title {
+        font-size: 30px;
+    }
+
+    .features__list {
+        grid-template-columns: 1fr;
+    }
+
+    .features__item1 {
+        margin-bottom: 0;
+    }
+
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials__title {
+        font-size: 30px;
+    }
+
+    .how-it-works__subheading,
+    .how-it-works__text {
+        text-align: center;
+    }
+
+    .how-it-works__heading {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .download-section__stores,
+    .hero__store-links {
+        flex-wrap: wrap;
+    }
+
+    .footer__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interactive-storytelling__image {
+        width: 70vw;
+    }
+
+    .hero__content-main {
+        padding: 0 20px;
+    }
+
+    .hero__image {
+        padding: 12px 20px;
+    }
+
+    .hero__heading span::before,
+    .how-it-works__heading h2 span::before,
+    .interactive-storytelling__heading1::before, 
+    .testimonials__title span::before {
+        width: 2rem;
+        height: 2rem;
+        top: -9%;
+        left: -2rem;
+    }
+
+    .how-it-works__container {
+        padding: 100px 30px;
+    }
+
+    .interactive-storytelling__container {
+        padding-left: 30px;
+    }
+
+    .features__container {
+        padding: 50px 30px;
+    }
+
+    .download-section__container {
+        padding: 50px 30px;
+    }
+
+    .footer__container {
+        padding: 50px 30px 0 30px;
+    }
+
+    .features__title span::before {
+        width: 2rem;
+        height: 2rem;
+        right: -2rem;
+    }
+
+    .interactive-storytelling__heading2::before {
+        width: 2rem;
+        height: 2rem;
+        right: -2rem;
+        top: -14%;
+    }
+
+    .testimonials__title {
+        padding: 0 30px;
+    }
+
+    .testimonials__text {
+        font-size: 16px;
+    }
+    
+    .testimonials__author-name {
+        font-size: 18px;
+    }
+
+    .testimonials__author-handle {
+        font-size: 14px;
+    }
+
+    .testimonials__item {
+        padding: 20px;
+    }
+
+    .features__content {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .features__subtitle {
+        font-size: 20px;
+    }
 }
