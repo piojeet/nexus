@@ -136,7 +136,7 @@
 }
 
 .hero__content {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 790px;
 }
 
@@ -981,5 +981,11 @@
 
     .features__subtitle {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero__content {
+        padding-bottom: 610px;
     }
 }
