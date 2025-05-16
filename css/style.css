@@ -179,13 +179,13 @@
     left: 0;
 }
 
-.how-it-works__intro {
+/* .how-it-works__intro {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .how-it-works__description {
-    max-width: 657px;
+    /* max-width: 657px; */
     width: 100%;
 }
 
@@ -203,10 +203,23 @@
     color: var(--dark-gray);
 }
 
-.how-it-works__heading {
+.how-it-works__heading,
+.how-it-works__heading-2 {
     font-size: 50px;
     font-family: var(--appetitePro-bold);
     font-weight: 200;
+}
+
+.how-it-works__heading-2 {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #305343;
+}
+
+.how-it-works__intro-2 {
+    margin: 70px 0;
 }
 
 .how-it-works__heading h2 {
@@ -229,6 +242,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.how-it-works__heading-2 .image-hero-ab {
+    position: relative;
+}
+
+.how-it-works__heading-2 .image-hero-ab::before {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: -3rem;
+    top: -8%;
+    transform: rotate(-15deg);
+    background: url('../images/Frame.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.how-it-works__text-2 {
+    text-align: center;
+}
+
+.voice-img {
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .interactive-storytelling__heading1 {
@@ -794,6 +834,16 @@
         max-width: 350px;
         width: 100%;
     }
+
+    .how-it-works__heading-2 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .voice-img img {
+        max-width: 800px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -932,14 +982,23 @@
         padding: 12px 20px;
     }
 
+    .how-it-works__intro-2 {
+        margin: 25px 0;
+    }
+
     .hero__heading .image-hero-ab::before,
     .how-it-works__heading h2 span::before,
     .interactive-storytelling__heading1::before,
-    .testimonials__title span::before {
+    .testimonials__title span::before,
+    .how-it-works__heading-2 .image-hero-ab::before {
         width: 2rem;
         height: 2rem;
         top: -9%;
         left: -2rem;
+    }
+
+    .voice-img {
+        margin-bottom: 0;
     }
 
     .image-hero-ab2::before {
@@ -1066,7 +1125,8 @@
         font-size: 14px;
     }
 
-    .how-it-works__heading {
+    .how-it-works__heading,
+    .how-it-works__heading-2 {
         font-size: 25px;
     }
 
